@@ -7,7 +7,8 @@ define(function (require) {
     app.service('sendSMSCodeService', ['$http', function ($http) {
         return {
             send: function (mobile) {
-                return $http.jsonp('http://rap.taobao.org/syf-lottery/lottery/sendSMS');
+                //return $http.jsonp('http://rap.taobao.org/syf-lottery/lottery/sendSMS');
+                return $http.get('data/sendSmsCode.json');
             }
         };
     }])
@@ -15,7 +16,8 @@ define(function (require) {
     .service('verifySMSCodeService', ['$http', function ($http) {
         return {
             verify: function (mobile, vcode) {
-                return $http.jsonp('http://rap.taobao.org/syf-lottery/lottery/validateSMS');
+                //return $http.jsonp('http://rap.taobao.org/syf-lottery/lottery/validateSMS');
+                return $http.get('data/sendSmsCode.json');
             }
         };
     }])
@@ -42,7 +44,8 @@ define(function (require) {
     .factory('awardService', ['$http', function ($http) {
         return {
             receive: function () {
-                return $http.jsonp("http://rap.taobao.org/syf-lottery/lottery/award");
+                //return $http.jsonp("http://rap.taobao.org/syf-lottery/lottery/award");
+                return $http.get('data/award.json');
             }
         };
     }]);

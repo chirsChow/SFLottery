@@ -13,10 +13,6 @@ define(function (require) {
         };
 
         var parse = utils.urlparse();
-        var authStatus = parse['authStatus']=='null'?'N':parse['authStatus'];//用户信息是否失效(N无效)
-        if(authStatus == 'N'){//用户信用失效，直接关闭页面
-            $scope.goBack();
-        }
         var sourceType = parse['sourceType'];//APP-SFEXP(速运通APP)、APP-SYPAY（顺手付）、WECHAT（微信）、ALIPAY（支付宝）、HIVEBOX(丰巢)、H5-LOTTERY (顺丰彩H5专区)、UPP 统一收银台、H5-WALLET、OTHER(其它)
         if (!sourceType || sourceType == '') {
             sourceType = $rootScope.sourceType;

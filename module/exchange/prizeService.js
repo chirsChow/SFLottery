@@ -4,13 +4,8 @@ define(function (require) {
     app.service('queryPrizeService', ['$http', function ($http) {
         return {
             get: function (orderId) {
-                return $http({
-                    method: 'POST',
-                    data: {
-                        orderId: orderId
-                    },
-                    url: "http://rap.taobao.org/syf-lottery/lottery/queryBatchPay"
-                });
+                //return $http.jsonp("http://rap.taobao.org/syf-lottery/lottery/queryBatchPay");
+                return $http.get('data/queryPay.json');
             }
         };
     }])

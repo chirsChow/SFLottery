@@ -1,0 +1,237 @@
+{
+  "data": [
+    {
+      "amt": 1,
+      "chanelName": "Gngcljld Kwynnpic Lbsrqisx Sgettt Din",
+      "fullCut": 660,
+      "invalidDate": "1992-12-06 02:45:31",
+      "typeCode": 1,
+      "useStatus": "INIT",
+      "voucherId": "460000200609126394",
+      "voucherInfo": "仅限优先平台消费时使用",
+      "voucherName": "优先折扣券"
+    },
+    {
+      "amt": 1000,
+      "chanelName": "Pkaqpinuf Vjjz Cfbx",
+      "fullCut": 389,
+      "invalidDate": "1974-01-30 21:46:38",
+      "typeCode": 1,
+      "useStatus": "FROZEN",
+      "voucherId": "460000197905283437",
+      "voucherInfo": "仅限门店消费时使用",
+      "voucherName": "优先折扣券"
+    },
+    {
+      "amt": 100,
+      "chanelName": "Uruadjufdu Lngrrp Qekcnwcqpt Tvdeomk",
+      "fullCut": 8600,
+      "invalidDate": "1993-06-22 21:26:56",
+      "typeCode": 1,
+      "useStatus": "USED",
+      "voucherId": "330000197111022148",
+      "voucherInfo": "仅限优先平台消费时使用",
+      "voucherName": "顺丰金抵扣券"
+    },
+    {
+      "amt": 10000,
+      "chanelName": "Ezyru Ydjtt Itwfwynt Luqq Qffi Fsiv Eww",
+      "fullCut": 247,
+      "invalidDate": "1989-03-10 13:45:52",
+      "typeCode": 1,
+      "useStatus": "INVALID",
+      "voucherId": "630000199907146234",
+      "voucherInfo": "仅限顺手付消费时使用",
+      "voucherName": "优先折扣券"
+    },
+    {
+      "amt": 1,
+      "chanelName": "Jph Adfwlbsw Favbqg Irpc",
+      "fullCut": 209,
+      "invalidDate": "1979-04-04 14:00:52",
+      "typeCode": 1,
+      "useStatus": "INIT",
+      "voucherId": "360000198804242514",
+      "voucherInfo": "仅限优先平台消费时使用",
+      "voucherName": "顺丰金抵扣券"
+    },
+    {
+      "amt": 100,
+      "chanelName": "Onsga Mdkkptm Izqxvj Iyzlvtv Ebom",
+      "fullCut": 2493,
+      "invalidDate": "1989-02-10 07:13:05",
+      "typeCode": 0,
+      "useStatus": "INVALID",
+      "voucherId": "460000198212293944",
+      "voucherInfo": "仅限优先平台消费时使用",
+      "voucherName": "门店专享券"
+    },
+    {
+      "amt": 10000,
+      "chanelName": "Tgs Zemhvw Beisknyks Ghfb Ulk Olvgynjhj",
+      "fullCut": 412,
+      "invalidDate": "2001-03-15 11:28:53",
+      "typeCode": 2,
+      "useStatus": "INVALID",
+      "voucherId": "530000198011199175",
+      "voucherInfo": "仅限顺手付消费时使用",
+      "voucherName": "优先折扣券"
+    },
+    {
+      "amt": 1000,
+      "chanelName": "Mwne Xwelch Qrxjenbxb Zylhw Tps",
+      "fullCut": 6637,
+      "invalidDate": "2010-05-23 18:03:23",
+      "typeCode": 1,
+      "useStatus": "FROZEN",
+      "voucherId": "23000020080202459X",
+      "voucherInfo": "仅限门店消费时使用",
+      "voucherName": "优先折扣券"
+    },
+    {
+      "amt": 1000,
+      "chanelName": "Xmaelthvo Uitvnv Yvrsv Hdicu Zvc Wwrcyums",
+      "fullCut": 1043,
+      "invalidDate": "1992-12-23 03:43:50",
+      "typeCode": 2,
+      "useStatus": "USED",
+      "voucherId": "420000201601075921",
+      "voucherInfo": "仅限门店消费时使用",
+      "voucherName": "优先折扣券"
+    },
+    {
+      "amt": 100,
+      "chanelName": "Xmco Btlje Ykmqiwkn Wcdhsxosc Isskotq Jwhmjjzm",
+      "fullCut": 4748,
+      "invalidDate": "1988-01-03 08:26:50",
+      "typeCode": 1,
+      "useStatus": "INVALID",
+      "voucherId": "610000198601185822",
+      "voucherInfo": "仅限门店消费时使用",
+      "voucherName": "顺丰金抵扣券"
+    },
+    {
+      "amt": 1,
+      "chanelName": "Gngcljld Kwynnpic Lbsrqisx Sgettt Din",
+      "fullCut": 660,
+      "invalidDate": "1992-12-06 02:45:31",
+      "typeCode": 1,
+      "useStatus": "INIT",
+      "voucherId": "460000200609126394",
+      "voucherInfo": "仅限优先平台消费时使用",
+      "voucherName": "优先折扣券"
+    },
+    {
+      "amt": 1000,
+      "chanelName": "Pkaqpinuf Vjjz Cfbx",
+      "fullCut": 389,
+      "invalidDate": "1974-01-30 21:46:38",
+      "typeCode": 1,
+      "useStatus": "FROZEN",
+      "voucherId": "460000197905283437",
+      "voucherInfo": "仅限门店消费时使用",
+      "voucherName": "优先折扣券"
+    },
+    {
+      "amt": 100,
+      "chanelName": "Uruadjufdu Lngrrp Qekcnwcqpt Tvdeomk",
+      "fullCut": 8600,
+      "invalidDate": "1993-06-22 21:26:56",
+      "typeCode": 1,
+      "useStatus": "USED",
+      "voucherId": "330000197111022148",
+      "voucherInfo": "仅限优先平台消费时使用",
+      "voucherName": "顺丰金抵扣券"
+    },
+    {
+      "amt": 10000,
+      "chanelName": "Ezyru Ydjtt Itwfwynt Luqq Qffi Fsiv Eww",
+      "fullCut": 247,
+      "invalidDate": "1989-03-10 13:45:52",
+      "typeCode": 1,
+      "useStatus": "INVALID",
+      "voucherId": "630000199907146234",
+      "voucherInfo": "仅限顺手付消费时使用",
+      "voucherName": "优先折扣券"
+    },
+    {
+      "amt": 1,
+      "chanelName": "Jph Adfwlbsw Favbqg Irpc",
+      "fullCut": 209,
+      "invalidDate": "1979-04-04 14:00:52",
+      "typeCode": 1,
+      "useStatus": "INIT",
+      "voucherId": "360000198804242514",
+      "voucherInfo": "仅限优先平台消费时使用",
+      "voucherName": "顺丰金抵扣券"
+    },
+    {
+      "amt": 100,
+      "chanelName": "Onsga Mdkkptm Izqxvj Iyzlvtv Ebom",
+      "fullCut": 2493,
+      "invalidDate": "1989-02-10 07:13:05",
+      "typeCode": 0,
+      "useStatus": "INVALID",
+      "voucherId": "460000198212293944",
+      "voucherInfo": "仅限优先平台消费时使用",
+      "voucherName": "门店专享券"
+    },
+    {
+      "amt": 10000,
+      "chanelName": "Tgs Zemhvw Beisknyks Ghfb Ulk Olvgynjhj",
+      "fullCut": 412,
+      "invalidDate": "2001-03-15 11:28:53",
+      "typeCode": 2,
+      "useStatus": "INVALID",
+      "voucherId": "530000198011199175",
+      "voucherInfo": "仅限顺手付消费时使用",
+      "voucherName": "优先折扣券"
+    },
+    {
+      "amt": 1000,
+      "chanelName": "Mwne Xwelch Qrxjenbxb Zylhw Tps",
+      "fullCut": 6637,
+      "invalidDate": "2010-05-23 18:03:23",
+      "typeCode": 1,
+      "useStatus": "FROZEN",
+      "voucherId": "23000020080202459X",
+      "voucherInfo": "仅限门店消费时使用",
+      "voucherName": "优先折扣券"
+    },
+    {
+      "amt": 1,
+      "chanelName": "Gngcljld Kwynnpic Lbsrqisx Sgettt Din",
+      "fullCut": 660,
+      "invalidDate": "1992-12-06 02:45:31",
+      "typeCode": 1,
+      "useStatus": "INIT",
+      "voucherId": "460000200609126394",
+      "voucherInfo": "仅限优先平台消费时使用",
+      "voucherName": "优先折扣券"
+    },
+    {
+      "amt": 1000,
+      "chanelName": "Pkaqpinuf Vjjz Cfbx",
+      "fullCut": 389,
+      "invalidDate": "1974-01-30 21:46:38",
+      "typeCode": 1,
+      "useStatus": "FROZEN",
+      "voucherId": "460000197905283437",
+      "voucherInfo": "仅限门店消费时使用",
+      "voucherName": "优先折扣券"
+    },
+    {
+      "amt": 100,
+      "chanelName": "Uruadjufdu Lngrrp Qekcnwcqpt Tvdeomk",
+      "fullCut": 8600,
+      "invalidDate": "1993-06-22 21:26:56",
+      "typeCode": 1,
+      "useStatus": "USED",
+      "voucherId": "330000197111022148",
+      "voucherInfo": "仅限优先平台消费时使用",
+      "voucherName": "顺丰金抵扣券"
+    }
+  ],
+  "resultCode": "00",
+  "resultMsg": "xgwvwt"
+}

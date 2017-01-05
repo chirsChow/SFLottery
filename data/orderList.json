@@ -1,0 +1,224 @@
+{
+  "data": [
+    {
+      "amount": 100000,
+      "dmCode": "650000200806158585",
+      "exchangeTime": "1977-01-16 03:44:35",
+      "lotteryOrderNo": "620000201109059396",
+      "lotteryPayNo": "810000197202147012",
+      "lotterySn": "3540012100421012",
+      "status": "PAID"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "340000201609071562",
+      "exchangeTime": "1996-05-26 19:07:32",
+      "lotteryOrderNo": "110000201605236056",
+      "lotteryPayNo": "650000200805277494",
+      "lotterySn": "351000000400012041",
+      "status": "PAY_FAIL"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "33000020070413334X",
+      "exchangeTime": "2003-09-21 03:59:28",
+      "lotteryOrderNo": "650000201404104298",
+      "lotteryPayNo": "620000198007068211",
+      "lotterySn": "3540012100421012",
+      "status": "PAYING"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "330000199803266476",
+      "exchangeTime": "1991-07-01 08:32:59",
+      "lotteryOrderNo": "430000199509257337",
+      "lotteryPayNo": "360000199805243556",
+      "lotterySn": "35100000007421001201",
+      "status": "PAID"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "530000201304204569",
+      "exchangeTime": "1983-08-22 12:52:56",
+      "lotteryOrderNo": "620000200605058144",
+      "lotteryPayNo": "210000197003206372",
+      "lotterySn": "3520001000001201",
+      "status": "PAID"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "430000198711122888",
+      "exchangeTime": "1994-01-19 20:41:12",
+      "lotteryOrderNo": "130000199207290034",
+      "lotteryPayNo": "230000200506205310",
+      "lotterySn": "3540012100421012",
+      "status": "PAY_FAIL"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "330000199310160585",
+      "exchangeTime": "2001-08-04 05:39:50",
+      "lotteryOrderNo": "330000197909096453",
+      "lotteryPayNo": "610000201508252511",
+      "lotterySn": "354000012000002104",
+      "status": "PAY_FAIL"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "630000201510171757",
+      "exchangeTime": "1991-02-12 12:28:59",
+      "lotteryOrderNo": "510000199003125839",
+      "lotteryPayNo": "130000200011103052",
+      "lotterySn": "341000000012451245",
+      "status": "PAID"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "650000200407085198",
+      "exchangeTime": "2008-05-19 06:33:14",
+      "lotteryOrderNo": "650000199206056475",
+      "lotteryPayNo": "36000020100427714X",
+      "lotterySn": "3520001000001201",
+      "status": "PAID"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "130000197312183637",
+      "exchangeTime": "1974-04-22 01:56:51",
+      "lotteryOrderNo": "120000198712248826",
+      "lotteryPayNo": "320000200602223860",
+      "lotterySn": "521000001400012007",
+      "status": "PAY_FAIL"
+    }
+  ,
+    {
+      "amount": 100000,
+      "dmCode": "330000199803266476",
+      "exchangeTime": "1991-07-01 08:32:59",
+      "lotteryOrderNo": "430000199509257337",
+      "lotteryPayNo": "360000199805243556",
+      "lotterySn": "35100000007421001201",
+      "status": "PAID"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "530000201304204569",
+      "exchangeTime": "1983-08-22 12:52:56",
+      "lotteryOrderNo": "620000200605058144",
+      "lotteryPayNo": "210000197003206372",
+      "lotterySn": "3520001000001201",
+      "status": "PAID"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "430000198711122888",
+      "exchangeTime": "1994-01-19 20:41:12",
+      "lotteryOrderNo": "130000199207290034",
+      "lotteryPayNo": "230000200506205310",
+      "lotterySn": "3540012100421012",
+      "status": "PAY_FAIL"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "330000199310160585",
+      "exchangeTime": "2001-08-04 05:39:50",
+      "lotteryOrderNo": "330000197909096453",
+      "lotteryPayNo": "610000201508252511",
+      "lotterySn": "354000012000002104",
+      "status": "PAY_FAIL"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "630000201510171757",
+      "exchangeTime": "1991-02-12 12:28:59",
+      "lotteryOrderNo": "510000199003125839",
+      "lotteryPayNo": "130000200011103052",
+      "lotterySn": "341000000012451245",
+      "status": "PAID"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "650000200407085198",
+      "exchangeTime": "2008-05-19 06:33:14",
+      "lotteryOrderNo": "650000199206056475",
+      "lotteryPayNo": "36000020100427714X",
+      "lotterySn": "3520001000001201",
+      "status": "PAID"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "130000197312183637",
+      "exchangeTime": "1974-04-22 01:56:51",
+      "lotteryOrderNo": "120000198712248826",
+      "lotteryPayNo": "320000200602223860",
+      "lotterySn": "521000001400012007",
+      "status": "PAY_FAIL"
+    }
+  ,
+    {
+      "amount": 100000,
+      "dmCode": "330000199803266476",
+      "exchangeTime": "1991-07-01 08:32:59",
+      "lotteryOrderNo": "430000199509257337",
+      "lotteryPayNo": "360000199805243556",
+      "lotterySn": "35100000007421001201",
+      "status": "PAID"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "530000201304204569",
+      "exchangeTime": "1983-08-22 12:52:56",
+      "lotteryOrderNo": "620000200605058144",
+      "lotteryPayNo": "210000197003206372",
+      "lotterySn": "3520001000001201",
+      "status": "PAID"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "430000198711122888",
+      "exchangeTime": "1994-01-19 20:41:12",
+      "lotteryOrderNo": "130000199207290034",
+      "lotteryPayNo": "230000200506205310",
+      "lotterySn": "3540012100421012",
+      "status": "PAY_FAIL"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "330000199310160585",
+      "exchangeTime": "2001-08-04 05:39:50",
+      "lotteryOrderNo": "330000197909096453",
+      "lotteryPayNo": "610000201508252511",
+      "lotterySn": "354000012000002104",
+      "status": "PAY_FAIL"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "630000201510171757",
+      "exchangeTime": "1991-02-12 12:28:59",
+      "lotteryOrderNo": "510000199003125839",
+      "lotteryPayNo": "130000200011103052",
+      "lotterySn": "341000000012451245",
+      "status": "PAID"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "650000200407085198",
+      "exchangeTime": "2008-05-19 06:33:14",
+      "lotteryOrderNo": "650000199206056475",
+      "lotteryPayNo": "36000020100427714X",
+      "lotterySn": "3520001000001201",
+      "status": "PAID"
+    },
+    {
+      "amount": 100000,
+      "dmCode": "130000197312183637",
+      "exchangeTime": "1974-04-22 01:56:51",
+      "lotteryOrderNo": "120000198712248826",
+      "lotteryPayNo": "320000200602223860",
+      "lotterySn": "521000001400012007",
+      "status": "PAY_FAIL"
+    }
+  ],
+  "resultCode": "00",
+  "resultMsg": "≤‚ ‘ƒ⁄»›9e63"
+}

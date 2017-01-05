@@ -4,7 +4,8 @@ define(function (require) {
     app.service('homeService', ['$http', function ($http) {
         return {
             get: function () {
-                return $http.jsonp("http://rap.taobao.org/syf-lottery/lottery/sfcQuery");
+                //return $http.jsonp("http://rap.taobao.org/syf-lottery/lottery/sfcQuery");
+                return $http.get('data/sfcQuery.json');
             }
         };
     }])
@@ -12,7 +13,8 @@ define(function (require) {
     .service('balanceService', ['$http', function ($http) {
         return {
             get: function () {
-                return $http.jsonp("http://rap.taobao.org/syf-lottery/lottery/balanceQuery");
+                //return $http.jsonp("http://rap.taobao.org/syf-lottery/lottery/balanceQuery");
+                return $http.get('data/balance.json');
             }
         };
     }])
@@ -20,7 +22,8 @@ define(function (require) {
     .service('accessTokenService', ['$http', function ($http) {
         return {
             get: function () {
-                return $http.jsonp("http://rap.taobao.org/syf-lottery/lottery/getAccessToken");
+                //return $http.jsonp("http://rap.taobao.org/syf-lottery/lottery/getAccessToken");
+                return $http.get('data/accessToken.json');
             }
         };
     }])
