@@ -36,7 +36,8 @@ define(function (require) {
                 } else if (businessType == 'EXCHANGE') {
                     targetUrl = location.origin + location.pathname + $rootScope.searchExchange + "&page=prizeAccept#/prizeAccept";
                 }
-                window.location.replace(bindSFPayUrl + "?mobile=" + mobile + "&businessType=" + businessType + "&targetUrl=" + encodeURIComponent(targetUrl));
+                //window.location.replace(bindSFPayUrl + "?mobile=" + mobile + "&businessType=" + businessType + "&targetUrl=" + encodeURIComponent(targetUrl));
+                window.location.replace(targetUrl);
             }
         };
     }])

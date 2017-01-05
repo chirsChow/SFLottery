@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8a56b071-bd92-4d31-99fe-3b5cce6a0751" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/bind/bindService.js" afterPath="$PROJECT_DIR$/module/bind/bindService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/home/couponService.js" afterPath="$PROJECT_DIR$/module/home/couponService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/home/exchangeDetailService.js" afterPath="$PROJECT_DIR$/module/home/exchangeDetailService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/exchange/exchangeService.js" afterPath="$PROJECT_DIR$/module/exchange/exchangeService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/home/homeCtrl.js" afterPath="$PROJECT_DIR$/module/home/homeCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/home/homeService.js" afterPath="$PROJECT_DIR$/module/home/homeService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/exchange/prizeService.js" afterPath="$PROJECT_DIR$/module/exchange/prizeService.js" />
     </list>
     <ignored path="works.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,91 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="homeService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/home/homeService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exchangeDetailService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/home/exchangeDetailService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exchange.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/exchange.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6896552">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="couponService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/home/couponService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exchangeService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/exchange/exchangeService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prizeService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/exchange/prizeService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="bindService.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/bind/bindService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71188474">
-              <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prizeCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/exchange/prizeCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="120" column="30" selection-start-line="120" selection-start-column="23" selection-end-line="120" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homeCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/home/homeCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="106" column="49" selection-start-line="106" selection-start-column="49" selection-end-line="106" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.57623047">
+              <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -270,20 +184,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -382,7 +282,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/home/homeCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="2.2244897">
           <caret line="106" column="49" selection-start-line="106" selection-start-column="49" selection-end-line="106" selection-end-column="49" />
           <folding />
         </state>
@@ -390,7 +290,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/exchange/prizeCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-6.3385353">
           <caret line="120" column="30" selection-start-line="120" selection-start-column="23" selection-end-line="120" selection-end-column="30" />
           <folding />
         </state>
@@ -526,8 +426,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/bind/bindService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71188474">
-          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.57623047">
+          <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
           <folding />
         </state>
       </provider>
