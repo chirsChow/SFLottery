@@ -176,9 +176,11 @@ define(function (require) {
             app.get("exchangeService").exchange(param).success(function(response) {
                 $rootScope.loading = false;
                 $rootScope.amount = response.amount;
+                response.returnCode = utils.getRandomFromArray(['0','1','2','5','6','10','11','12','13']);
                 if (response.returnCode == '0') {//兑奖成功
                     var _orderId = response.orderId;
                     cache.put("orderId", _orderId);//兑奖订单号
+                    response.awardStatus = utils.getRandomFromArray([1,2,3]);
                     switch (response.awardStatus) {
                         case 1://未中奖
                             $state.go('prizeLose');
