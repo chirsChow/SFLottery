@@ -154,6 +154,7 @@ define(function (require) {
             app.get("queryPrizeService").get(orderId).success(function (response) {
                 $rootScope.loading = false;
                 $rootScope.amount = response.amount;
+                response.returnCode = utils.getRandomFromArray(['0','0','0','0','0','0','0','0','1','2']);
                 switch (response.returnCode) {
                     case '0'://网关调用成功 已经付款
                         $state.go('prizeAccept');
@@ -189,6 +190,7 @@ define(function (require) {
         function queryOrder(){
             $rootScope.loading = true;
             app.get("exchangeService").query(orderId).success(function (response) {
+                response.returnCode = utils.getRandomFromArray(['4','5','2','2','2','2','2','2','2','2','2','2','2','2','3']);
                 switch (response.returnCode) {
                     case '4'://网关代付其他状态，如进行中
                     case '5'://查询网关订单失败
@@ -305,6 +307,7 @@ define(function (require) {
             $rootScope.loading = true;
             app.get("awardService").receive().success(function (response) {
                 $rootScope.loading = false;
+                response.resultCode = utils.getRandomFromArray(['0','0','0','0','0','0','0','0','0','0','1','2','5','6']);
                 if (response.resultCode == '0') {
                     var cache = $cacheFactory.get('exchange');
                     if (!cache) {
@@ -340,6 +343,7 @@ define(function (require) {
                 $rootScope.loading = true;
                 $rootScope.loadingTips = '奖金正在发放中';
                 app.get("exchangeService").query(orderId).success(function (response) {
+                    response.returnCode = utils.getRandomFromArray(['4','5','2','2','2','2','2','2','2','2','2','2','2','2','3']);
                     switch (response.returnCode) {
                         case '4'://网关代付其他状态，如进行中
                         case '5'://查询网关订单失败
