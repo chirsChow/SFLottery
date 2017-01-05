@@ -1,0 +1,663 @@
+/*  ticket  */
+.ticket-list {
+  padding: 14px 5%;
+  p.ov {
+    color: #aaa;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+}
+
+.tips-body {
+  @include border-radius(5px);
+}
+
+.lang-input {
+  margin: 15px auto;
+  width: 90%;
+  height: 42px !important;
+  display: block;
+  padding: 10px !important;
+  border: 1px solid #ededed;
+  @include border-radius(0px);
+  &.topLeftRight {
+    //border-bottom-width: 0;
+    @include border-top-radius(5px);
+  }
+  &.bottomLeftRight {
+    border-top-width: 0;
+    @include border-bottom-radius(5px);
+  }
+  &.height100{
+    height: 50px !important;
+  }
+  &.border-color-d9cd93{
+    border-color:#e4e0ca;
+  }
+  &.border-radius5{
+    @include border-radius(5px);
+  }
+}
+
+.prize-box {
+  position: relative;
+  background-color: #fce037;
+  min-height: 100%;
+  font-size: 1.5rem;
+  .prize-bg {
+    height: 100%;
+    width: 100%;
+  }
+  .prize-img {
+    position: absolute;
+    top: 14%;
+    left: 0;
+    width: 90%;
+    margin: 0 5%;
+    .prize-img1 {
+      position: relative;
+      text-align: center;
+      div {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      .prize-result-img{
+        width: 70px;
+      }
+      .prize-result-img-big{
+        width: 80px;
+      }
+      .prize-quota {
+        font-size: 6rem;
+        color: #fd5f53;
+        line-height: 38px;
+      }
+      .prize-title{
+        @media screen and (min-width: 320px) {
+          margin-bottom: 5px;
+        }
+        @media screen and (min-width: 375px) {
+          margin-bottom: 8px;
+        }
+        @media screen and (min-width: 414px) {
+          margin-bottom: 16px;
+        }
+        @media screen and (min-width: 621px) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .prize-mid-img{
+      width: 100%;
+    }
+    .prize-img2{
+      background-color: #ef4434;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      padding: 5% 8%;
+      @media screen and (min-width: 320px) {
+        height: 180px;
+      }
+      @media screen and (min-width: 350px) {
+        height: 220px;
+      }
+      @media screen and (min-width: 375px) {
+        height: 240px;
+      }
+      @media screen and (min-width: 414px) {
+        height: 240px;
+      }
+      p{
+        color: #7a0d03;
+        margin: 0 auto;
+      }
+      .prize-edit-phone{
+        color:#fff;
+        &:active{
+          color:rgba(255,255,255,.6);
+        }
+      }
+    }
+  }
+  @at-root .prize-box-tips {
+    @extend .emphasis;
+    @media screen and (max-width: 320px) {
+      padding: 0;
+    }
+    @media screen and (min-width: 350px) {
+      padding: 10px;
+    }
+  }
+  @at-root .picc{
+    color: rgba(141,18,8,0.8);
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 12px;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.tot-n {
+  font-size: 3.9rem;
+  line-height: 1;
+  color: $contentRed;
+  padding: 10px 0 20px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.tot-n1 {
+  font-size: 3.9rem;
+  line-height: 1;
+  color: #fff;
+  padding: 10px 0 20px;
+}
+
+.tot-red {
+  font-size: 1.5rem;
+  color: $contentRed;
+}
+
+.tot-info {
+  h4 {
+    font-size: 2rem;
+  }
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.tot-border-left-red {
+  border-left: 1px solid #fc8996;
+}
+
+.tot-border-left {
+  border-left: 1px solid #f5f5f5;
+}
+
+.home-red-txt {
+  font-size: 3.9rem;
+  color: $contentRed;
+}
+
+.home-red-txt1 {
+  font-size: 3.9rem;
+  color: $expressRed;
+}
+
+.list-sc {
+  padding-bottom: 36px;
+  height: 100%;
+  box-sizing: border-box;
+}
+//顺手付使用
+.btn-sub-red {
+  width: 90%;
+  color: #fff;
+  @include border-radius(5px);
+  background-color: $contentRed;
+  &:disabled {
+    opacity: .4;
+  }
+  &:active {
+    background-color: #e45137;
+  }
+}
+//速运使用
+.btn-sub-red1{
+  @extend .btn-sub-red;
+  @include border-radius(0px);
+  background-color: $expressRed;
+}
+
+.home-white-txt {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.home-big-red-bg {
+  background-color: $contentRed!important;
+}
+.home-big-red-bg1 {
+  background-color: $expressRed;
+}
+
+.home-top-tips {
+  background-color: #ffffcc;
+  color: #fb5e5a;
+  padding: 6px 18px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.exchange-detail-color {
+  color: #999;
+}
+
+.exchange-fixed {
+  font-size: 1.7rem;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 15px;
+  line-height: 26px !important;
+  vertical-align: -webkit-baseline-middle;
+  &.shaoyishao {
+    background-color: #6aabe0;
+  }
+  &.shaoyishao:active {
+    background-color: #5a9edb;
+  }
+  img {
+    width: 34px;
+    margin-right: 10px;
+  }
+  span {
+    vertical-align: text-top;
+  }
+}
+
+.exchange_tips {
+  font-size: 14px;
+  line-height: 26px !important;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.exchange-tips-img{
+  @media screen and (min-width: 320px) {
+    margin-top: -55px;
+  }
+  @media screen and (min-width: 375px) {
+    margin-top: -55px;
+  }
+  @media screen and (min-width: 414px) {
+    margin-top: -55px;
+  }
+}
+
+.mask-layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=100);
+  z-index: 999;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  img {
+    @media screen and (min-width: 320px) {
+      width: 80%;
+    }
+    @media screen and (min-width: 375px) {
+      width: 82%;
+    }
+    @media screen and (min-width: 414px) {
+      width: 86%;
+    }
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.shaoshao-bar {
+  background-color: #fff;
+  line-height: 80px;
+  height: 80px;
+  position: relative;
+  display: block;
+  font-size: 1.7rem;
+  img {
+    width: 50px;
+    margin: 0 10px 0 24px;
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 3.8%;
+    line-height: 80px;
+    height: 100%;
+    content: "\e601";
+    font-family: 'iconfont';
+    float: right;
+    font-size: 2rem;
+    color: #a7b0b9;
+  }
+}
+
+.underline {
+  color: #0d86ff;
+}
+
+.iknow {
+  background-color: #fff;
+  line-height: 40px;
+  width: 66%;
+  color: #636161;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  margin: 20px 0 6px 0;
+  font-size: 1.6rem;
+  &:active {
+    background-color: rgba(0, 0, 0, .05);
+  }
+}
+
+.iknow-w {
+  @extend .iknow;
+  width: 90%;
+  color: $contentRed1;
+}
+
+.no-record {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  img {
+    width: 32%;
+  }
+  h5 {
+    font-size: 15px;
+    margin: 15px;
+  }
+}
+
+.detail-list {
+  //padding-left: 5% !important;
+  margin-left: 0 !important;
+  background-color: #fff;
+  border: none !important;
+  position: relative;
+  &:after {
+    content: '';
+    border-bottom: 1px solid $borderColor;
+    width: 95%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+  }
+  .gray-color {
+    color: $grayColor;
+    font-size: 1.2rem;
+  }
+  .list-left {
+    font-size: 1.4rem;
+  }
+}
+
+.list-left {
+  padding-left: 5%;
+}
+
+//体彩中心地址列表页面定位
+.pos-page {
+  position: absolute;
+  top: $headerHeight;
+}
+
+.province-container {
+  display: flex;
+  display: inline-flex;
+  width: 100%;
+  height: 44px;
+  text-align: center;
+  padding: 13px 0;
+  background-color: $bgDefault;
+  border-bottom: 1px solid #dedede;
+  & div {
+    flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    line-height: 18px;
+    height: 18px;
+    &:not(:last-child) {
+      border-right: 1px solid #ccc;
+    }
+  }
+  & div input {
+    display: none;
+    &:checked + .province-label {
+      border-bottom: 2px solid #ff5647;
+      color: #ff5647;
+    }
+  }
+  & label {
+    display: inline-block;
+    border: none;
+    width: 48%;
+    margin: 0 26%;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+}
+
+.re-dark {
+  margin-bottom: 50px;
+  background-color: #fff;
+}
+
+.non-support {
+  margin: 0 auto;
+  height: 80px;
+  img{
+    padding: 20px 5px 20px 20px;
+    width: 72px;
+  }
+  &>div {
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+/**领取奖金页面**/
+.got-prize-top {
+  position: relative;
+  color: #fff;
+  width: 100%;
+  height: 200px;
+  background: -webkit-linear-gradient(top, #fc5648 , #ef4233); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(bottom, #fc5648, #ef4233); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(bottom, #fc5648, #ef4233); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to bottom, #fc5648 , #ef4233); /* 标准的语法 */
+  .prize-exchange-record {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    &:active{
+      color:rgba(255,255,255,.6);
+    }
+  }
+  .prize-content {
+    text-align: center;
+    padding-top: 32px;
+    .prize-rmb {
+      img {
+        width: 4%;
+        vertical-align: baseline;
+        margin-bottom: -2px;
+      }
+      span {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.got-prize-bottom {
+  display: flex;
+  display: inline-flex;
+  width: 100%;
+  span {
+    flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    text-align: center;
+  }
+}
+
+.got-prize-border-bottom {
+  .got-prize-bottom {
+    padding: 2px 0 10px 0;
+    @at-root .got-prize-bottom-border {
+      border-bottom: 1px solid #ececec;
+    }
+  }
+  @at-root .got-prize-bottom-title{
+    padding-bottom: 5px;
+  }
+}
+
+.QRCode {
+  width: 60%;
+  border: 1px solid #dad9d9;
+  margin: 15px auto;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+  h3 {
+    background-color: #ececec;
+    margin: 0 8px 4px 8px;
+    padding: 2px;
+    font-size: 1.3rem;
+  }
+}
+
+.exchange-input-bg-color {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fffa64), to(#fde540)) no-repeat fixed bottom;
+  .exchange-log-img{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 32%;
+  }
+  .exchange-guide{
+    font-size: 1.5rem;
+    color: #f34839;
+    position: absolute;
+    right: 15px;
+    top: 4%;
+    span{
+      color: #027ebd;
+      position: absolute;
+      width: 86px;
+      right: 10px;
+      top: -2px;
+      &:active {
+        color: rgba(2, 126, 189, .6);
+      }
+    }
+    img{
+      position: absolute;
+      width: 100px;
+      right: 10px;
+    }
+  }
+  .exchange-tips{
+    font-size: 1.5rem;
+    padding: 22% 0 5% 0;
+    text-align: center;
+    color:$emphasis;
+    div:first-child{
+      color: #f34839;
+      padding: 2px 0;
+    }
+    p:last-child{
+      color: #f34839;
+      padding: 2px 0;
+    }
+  }
+  .exchange-bg-img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .exchange-content {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0 16px;
+    .exchange-change {
+      img {
+        width: 5%;
+        margin: 0 auto;
+      }
+      span {
+        color: #027ebd;
+        vertical-align: middle;
+        &:active {
+          color: rgba(2, 126, 189, .6);
+        }
+      }
+    }
+    .has-phone {
+      padding: 10px;
+      font-size: 1.5rem;
+      background-color: #fff;
+      border-radius: 4px;
+      width: 90%;
+      margin: 0 auto;
+      border: 1px solid #e4e0ca;
+    }
+    .edit-phone {
+      color: #027ebd;
+      padding: 5px;
+      text-align: center;
+      width: 100%;
+      &:active{
+        color: rgba(2, 126, 189, .6);
+      }
+    }
+  }
+  .lottery-log{
+    text-align: center;
+    width: 20%;
+    margin-bottom: 10px;
+  }
+}
+
+.exchange-change-digest {
+  color: #fff;
+  &:active {
+    color: rgba(255, 255, 255, .6);
+  }
+}
+
+.exchange-scan-btn {
+  position: absolute;
+  width: 100%;
+  @media screen and (min-height: 480px) {
+    bottom: 5%;
+  }
+  @media screen and (min-height: 568px) {
+    bottom: 12%;
+  }
+  @media screen and (min-height: 667px) {
+    bottom: 15%;
+  }
+}
+
+
+
+
+
+

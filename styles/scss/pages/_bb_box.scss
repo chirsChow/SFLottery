@@ -1,0 +1,141 @@
+/*  弹出框  */
+// bb-confirm
+.bb_mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 98;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.bb_box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  width: 300px;
+  margin-top: -70px;
+  margin-left: -150px;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.bb_body .bb_content {
+  margin: 15px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.bb_buttons {
+  height: 44px;
+  border-top: 1px solid #edeef0;
+  @extend .box;
+  .bb_button {
+    display: block;
+    //width: 50%;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    height: 43px;
+    background: none;
+    color: #2390ed;
+    text-align: center;
+    line-height: 44px;
+    font-size: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .bb_cancel {
+    border-right: 1px solid #edeef0;
+  }
+}
+
+//对话框关闭样式
+.bb_close {
+  position: absolute;
+  right: -10px;
+  z-index: 1200;
+  top: -10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 28px;
+  background: #333;
+  font-size: 18px;
+  color: #fff;
+}
+
+.bb_box1 {
+  width: 80%;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative; // 关闭按钮 相对样式
+}
+
+.bb_body1 {
+  display: box;
+  box-pack: center;
+  box-align: center;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  position: absolute;
+  z-index: 999;
+  width: 72%;
+  top: 50%;
+  left: 50%;
+  @include border-radius(10px);
+  background-color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.bb_body3 {
+  background: #fff;
+  padding: 20px;
+  margin: auto;
+  > p {
+    margin-bottom: 10px;
+  }
+}
+
+.bb_body-5{
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  @include border-radius(5px);
+  width: 80%;
+  display:block;
+}
+
+.bb_dialog {
+  img {
+    width: 30%;
+    padding: 5px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 10px;
+  }
+  p {
+    font-size: 15px;
+  }
+}

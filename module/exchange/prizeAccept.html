@@ -1,0 +1,19 @@
+<!-- 领奖页面(兑奖成功)-->
+<head-title show-backbtn="true" go-back="goBack()" app-title="领取奖金"></head-title>
+<div class="got-prize-top">
+    <div class="prize-content">
+        <img src="images/wallet-gold.png" style="width: 20%;"/>
+        <!--奖金发放完成-->
+        <div ng-if="loadingTips==''" class="prize-rmb">
+            <img src="images/icon-rmb.png"/>
+            <span ng-bind="amount | AvaBalance | number : 2"></span>
+        </div>
+        <!--奖金发放完成-->
+        <p ng-if="loadingTips==''">已存入顺手付账号<i ng-bind="sfpayLoginName | subStrForStar_phone"></i></p>
+        <!--奖金发放中...-->
+        <p ng-hide="loadingTips==''" class="txt-line">— — —</p>
+    </div>
+    <span class="prize-exchange-record" ng-click="record()">兑奖记录</span>
+</div>
+<!--余额怎么查看和使用？-->
+<div ng-include="'template/balanceViewAndUse.html'"></div>

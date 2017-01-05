@@ -1,0 +1,324 @@
+{
+  "data": [
+    {
+      "province": "广东省",
+      "list": [
+        {
+          "cityName": "广州市体育彩票管理中心",
+          "telphone": "020-38845647",
+          "detailAdress": "广州市天河区天河体育中心游泳馆东面二楼"
+        },
+        {
+          "cityName": "深圳市体育彩票管理中心",
+          "telphone": "0755-82136329",
+          "detailAdress": "福田区福强路30号福田体育公园负一层"
+        },
+        {
+          "cityName": "珠海市体育彩票管理中心",
+          "telphone": "0756-2613351",
+          "detailAdress": "珠海市香洲区人民东路水木清华园652号铺"
+        },
+        {
+          "cityName": "汕头市体育彩票管理中心",
+          "telphone": "0754-88533236",
+          "detailAdress": "汕头市金平区长平路18号西侧1座"
+        },
+        {
+          "cityName": "韶关市体育彩票管理中心",
+          "telphone": "0751-8896026",
+          "detailAdress": "广东省韶关市园前东路20号"
+        },
+        {
+          "cityName": "佛山市体育彩票管理中心",
+          "telphone": "0757-83806028",
+          "detailAdress": "佛山市岭南大道南浦新村26号嘉俊苑C座首层"
+        },
+        {
+          "cityName": "江门市体育彩票管理中心",
+          "telphone": "0750-3270856",
+          "detailAdress": "江门市跃进路100号之一首层(江门市体育场内)"
+        },
+        {
+          "cityName": "湛江市体育彩票管理中心",
+          "telphone": "0759-3206183",
+          "detailAdress": "湛江市人民大道北体育中心三楼"
+        },
+        {
+          "cityName": "茂名市体育彩票管理中心",
+          "telphone": "0668-289308",
+          "detailAdress": "茂名市双山三路38号二楼"
+        },
+        {
+          "cityName": "肇庆市体育彩票管理中心",
+          "telphone": "0758-2843834",
+          "detailAdress": "肇庆市西江北路体育中心内光彩游泳场西"
+        },
+        {
+          "cityName": "惠州市体育彩票管理中心",
+          "telphone": "0752-2127709",
+          "detailAdress": "惠州市鹅岭北路14号"
+        },
+        {
+          "cityName": "梅州市体育彩票管理中心",
+          "telphone": "0753-2281423",
+          "detailAdress": "梅州市梅江区新中路66-3号"
+        },
+        {
+          "cityName": "汕尾市体育彩票管理中心",
+          "telphone": "0660-3392139",
+          "detailAdress": "汕尾市城区汕尾大道奎山段顺昌综合楼南梯"
+        },
+        {
+          "cityName": "河源市体育彩票管理中心",
+          "telphone": "0762-3338505",
+          "detailAdress": "河源市源城区旺福路5号"
+        },
+        {
+          "cityName": "阳江市体育彩票管理中心",
+          "telphone": "0662-3376968",
+          "detailAdress": "阳江市江城区体育路湖湾华庭11幢6-7号"
+        },
+        {
+          "cityName": "清远市体育彩票管理中心",
+          "telphone": "0763-3863955",
+          "detailAdress": "清远市清城区新城四号区车站对面康怡居首层"
+        },
+        {
+          "cityName": "东莞市体育彩票管理中心",
+          "telphone": "0769-22461501",
+          "detailAdress": "东莞市体育路3号体育中心"
+        },
+        {
+          "cityName": "中山市体育彩票管理中心",
+          "telphone": "0760-88388350",
+          "detailAdress": "中山市兴中道22号12卡"
+        },
+        {
+          "cityName": "潮州市体育彩票管理中心",
+          "telphone": "0768-2128670",
+          "detailAdress": "潮州市湘桥区新洋路380"
+        },
+        {
+          "cityName": "揭阳市体育彩票管理中心",
+          "telphone": "0663-8218542",
+          "detailAdress": "揭阳市东山区建阳路金凤豪苑西侧"
+        },
+        {
+          "cityName": "云浮市体育彩票管理中心",
+          "telphone": "0766-8180768",
+          "detailAdress": "云浮市云城区玉皇路翠玉区第10幢13号"
+        }
+      ]
+    },
+    {
+      "province": "江苏省",
+      "list": [
+        {
+          "cityName": "南京市体育彩票管理中心",
+          "telphone": "025-51877078",
+          "detailAdress": "南京市集庆门大街99号"
+        },
+        {
+          "cityName": "无锡市体育彩票管理中心",
+          "telphone": "0510-85095010",
+          "detailAdress": "无锡市滨湖区滴翠路18-19号"
+        },
+        {
+          "cityName": "徐州市体育彩票管理中心",
+          "telphone": "0516-5695930",
+          "detailAdress": "徐州市泉山区湖北路西首体育中心大门西隔壁"
+        },
+        {
+          "cityName": "常州市体育彩票管理中心",
+          "telphone": "0519-6619655",
+          "detailAdress": "新北区龙锦路1259-1号体育运动服务综合楼17-18"
+        },
+        {
+          "cityName": "苏州市体育彩票管理中心",
+          "telphone": "0512-65242608",
+          "detailAdress": "苏州市凤凰街137号"
+        },
+        {
+          "cityName": "南通市体育彩票管理中心",
+          "telphone": "0513-3510950",
+          "detailAdress": "南通市崇川区青年西路82号市体育馆内"
+        },
+        {
+          "cityName": "连云港市体育彩票管理中心",
+          "telphone": "0518-5451663",
+          "detailAdress": "连云港新浦区海昌北路83号"
+        },
+        {
+          "cityName": "淮安市体育彩票管理中心",
+          "telphone": "0517-3917788",
+          "detailAdress": "淮安市淮海北路57号淮钢健身会馆一楼"
+        },
+        {
+          "cityName": "盐城市体育彩票管理中心",
+          "telphone": "0515-8246141",
+          "detailAdress": "盐城市解放南路102号全民健身中心一楼"
+        },
+        {
+          "cityName": "扬州市体育彩票管理中心",
+          "telphone": "0514-7323625",
+          "detailAdress": "扬州市维扬路539-28号（天下花园西门北侧）"
+        },
+        {
+          "cityName": "镇江市体育彩票管理中心",
+          "telphone": "0511-5019317",
+          "detailAdress": "镇江市健康路1-1号"
+        },
+        {
+          "cityName": "泰州市体育彩票管理中心",
+          "telphone": "0523-6218389",
+          "detailAdress": "泰州市鼓楼南路401-10号"
+        },
+        {
+          "cityName": "宿迁市体育彩票管理中心",
+          "telphone": "0527-4353801",
+          "detailAdress": "宿迁市世纪大道92号全民健身中心一楼"
+        }
+      ]
+    },
+    {
+      "province": "湖南省",
+      "list": [
+        {
+          "cityName": "长沙市体彩分中心",
+          "telphone": "0731-85829211",
+          "detailAdress": "长沙市天心区赤岭路279号（理工大学大门正对面）"
+        },
+        {
+          "cityName": "株洲市体彩分中心",
+          "telphone": "0731-28218218",
+          "detailAdress": "株洲市天元区市体育中心东北入口处"
+        },
+        {
+          "cityName": "湘潭市体彩分中心",
+          "telphone": "0731-58520626",
+          "detailAdress": "湘潭市体育中心南门108室"
+        },
+        {
+          "cityName": "衡阳市体彩分中心",
+          "telphone": "0734-8263368",
+          "detailAdress": "衡阳市先锋路160号衡阳市体育局3楼"
+        },
+        {
+          "cityName": "娄底市体彩分中心",
+          "telphone": "0738-8239118",
+          "detailAdress": "娄底市娄星区长青中街116号原娄底艺术馆四楼"
+        },
+        {
+          "cityName": "永州市体彩分中心",
+          "telphone": "0746-8333302",
+          "detailAdress": "永州市体育局门口新体育馆二楼西"
+        },
+        {
+          "cityName": "邵阳市体彩分中心",
+          "telphone": "0739-5320988",
+          "detailAdress": "邵阳市宝庆中路470号"
+        },
+        {
+          "cityName": "常德市体彩分中心",
+          "telphone": "0736-7726120",
+          "detailAdress": "常德市武陵大道中段市体育中心西大厅1楼"
+        },
+        {
+          "cityName": "岳阳市体彩分中心",
+          "telphone": "0730-8840556",
+          "detailAdress": "岳阳市金鹗中路125号体育局1楼彩票分中心"
+        },
+        {
+          "cityName": "张家界市体彩分中心",
+          "telphone": "0744-8253500",
+          "detailAdress": "永定区子午西路大庸桥湖南广电局实验台内"
+        },
+        {
+          "cityName": "湘西市体彩分中心",
+          "telphone": "0743-8712508",
+          "detailAdress": "吉首市团结西路17号(原老州教育局一楼办公室)"
+        },
+        {
+          "cityName": "郴州市体彩分中心",
+          "telphone": "0735-2224997",
+          "detailAdress": "郴州市苏仙北路13号市体育局办公楼1楼"
+        },
+        {
+          "cityName": "怀化市体彩分中心",
+          "telphone": "0745-2383578",
+          "detailAdress": "怀化市天星东路体育中心北大厅"
+        },
+        {
+          "cityName": "益阳市体彩分中心",
+          "telphone": "0737-4236612",
+          "detailAdress": "益阳市益阳大道（西）259号"
+        },
+        {
+          "cityName": "浏阳市体彩分中心",
+          "telphone": "0731-83657581",
+          "detailAdress": "浏阳市劳动北路体育中心2号门面"
+        }
+      ]
+    },
+    {
+      "province": "江西省",
+      "list": [
+        {
+          "cityName": "江西省体育彩票管理中心南昌分中心",
+          "telphone": "0791-86294018",
+          "detailAdress": "福州路28号南昌分中心"
+        },
+        {
+          "cityName": "江西省体育彩票管理中心景德镇分中心",
+          "telphone": "0798-8220125",
+          "detailAdress": "景德镇市翠云路都建楼上"
+        },
+        {
+          "cityName": "江西省体育彩票管理中心萍乡分中心",
+          "telphone": "0799-6781879",
+          "detailAdress": "萍乡市安源区金陵东路18号体育中心"
+        },
+        {
+          "cityName": "江西省体育彩票管理中心九江分中心",
+          "telphone": "0792-8182053",
+          "detailAdress": "九江市人民路122号"
+        },
+        {
+          "cityName": "江西省体育彩票管理中心新余分中心",
+          "telphone": "0790-6736355",
+          "detailAdress": "新余市渝水区体育中心内"
+        },
+        {
+          "cityName": "江西省体育彩票管理中心鹰潭分中心",
+          "telphone": "0701-6655837",
+          "detailAdress": "鹰潭市龙虎山大道体育馆北门"
+        },
+        {
+          "cityName": "江西省体育彩票管理中心赣州分中心",
+          "telphone": "0797-8291800",
+          "detailAdress": "赣州市和平路37号体彩赣州分中心"
+        },
+        {
+          "cityName": "江西省体育彩票管理中心吉安分中心",
+          "telphone": "0796-8228232",
+          "detailAdress": "长岗北路10号门面"
+        },
+        {
+          "cityName": "江西省体育彩票管理中心宜春分中心",
+          "telphone": "0795-3260235",
+          "detailAdress": "宜春市建设北路体育馆内"
+        },
+        {
+          "cityName": "江西省体育彩票管理中心抚州分中心",
+          "telphone": "0794-7041909",
+          "detailAdress": "抚州市兴鲁坊路(市六中正对面)"
+        },
+        {
+          "cityName": "江西省体育彩票管理中心上饶分中心",
+          "telphone": "0793-8295507",
+          "detailAdress": "上饶市体育馆路18号经委一楼体彩办公室"
+        }
+      ]
+    }
+  ]
+}

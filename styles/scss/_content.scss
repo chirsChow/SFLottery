@@ -1,0 +1,144 @@
+.item{
+  >div{
+    padding: 11px 5% 10px 0;
+    margin: 0 0 0 5%;
+    line-height: 22px;
+    border-bottom: 1px solid #f5f5f5;
+    &:last-of-type{
+      border: none;
+    }
+    &.btm:last-of-type {
+      @include border-bottom(#dfe2e5);
+    }
+    h4{
+      font-size: 1.4rem;
+      color: #686e73;
+      margin-bottom: 2px;
+      .fr{
+        font-size: 1.7rem;
+        color: #333;
+      }
+    }
+    >p{color: #b7bec2;}
+
+  }
+  >p{
+    line-height: 42px;
+    font-size: 14px;
+    color: #919699;
+  }
+  h3{
+    padding: 8px 5%;
+    background: #e1e4e6;
+    color: #5e6c77;
+    font-size: 1.3rem;
+  }
+}
+.form{
+  color: #636161;
+  >div{line-height: 36px;}
+  >h3{font-size: 1.4rem;}
+  >h4{font-size: 1.3rem;}
+}
+@mixin input-label($wid) {
+  display: inline-block;
+  color: $fcLeft;
+  font-size: 1.5rem;
+  & + i {
+    color: #919699;
+  }
+  width: $wid;
+}
+
+//  input-label2  ( security.scss 支付银行卡验证码 )
+//  input-label4  ( withhold.scss  代扣绑卡详情页面)
+.input-label{
+  @include input-label(90px);
+}
+.input-label3 {  // 收银台 登陆 输入手机号页面专用
+  @include input-label(80px)
+}
+
+.entry{
+  display: block;
+  font-size: 1.5rem;
+  position: relative;
+  padding-left: 5%;
+  line-height: 50px;
+  @extend .ov;
+  .icon-font{
+    font-size: 2rem;
+    margin-right: 10px;
+  }
+  .fr{
+    font-size: 1.5rem;
+    margin-right: 35px;
+  }
+  &::after{
+    position: absolute;
+    top:0;
+    right: 3.8%;
+    line-height: 50px;
+    height: 100%;
+    content: "\e601";
+    font-family: 'iconfont';
+    float: right;
+    font-size: 2rem;
+    color: #a7b0b9;
+  }
+  &::before{
+    content: '';
+    border-bottom: 1px solid $borderColor;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    padding-left: inherit;
+  }
+  &:active{
+    background-color: #f2f3f6;
+  }
+}
+.noAfter.entry::after {  //加 noAfter 去掉 entry 右侧箭头
+  content: "";
+}
+
+.inputWidth{
+  width: 70%;
+  min-width: 150px;
+  text-align: center;
+  border-bottom: 1px solid #2390ED;
+  &:-ms-input-placeholder{text-align: center;}
+  &:-webkit-input-placeholder{text-align: center;}
+
+}
+
+.payMoney{
+  padding-top: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #686e73;
+  >p{
+    font-size: 2.4rem;
+    color: #f1484f;
+  }
+}
+.tabs{
+  @extend .box;
+  >div{
+    -webkit-box-flex: 1;
+    flex: 1;
+    line-height: 48px;
+    max-width: 150px;
+
+  }
+}
+
+
+
+/**/
+.success-tip {
+  font-size: 7.7rem;
+  color: #2390ED;
+}
+

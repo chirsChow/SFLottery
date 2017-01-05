@@ -1,0 +1,33 @@
+<!--  可用丰彩券  -->
+<head-title show-backbtn="true" go-back="goBack()" app-title="可用丰彩券"></head-title>
+
+<div class="list-sc bg-dark rel oa">
+    <div class="full-h oa showList">
+        <div ng-repeat="item in list" class="coupon-item coupon-item-0">
+            <div class="coupon-discount box-vertical">
+                <h4><span class="discount">{{item.amt | cent2yuanforvoucherdiget}}</span><span>{{item.amt | cent2yuanforvoucherunit}}</span></h4>
+                <div class="space-small" ng-if="item.fullCut>0">满{{item.fullCut | cent2yuanforvoucher}}可用</div>
+            </div>
+            <div>
+                <h3>{{item.voucherName}}</h3>
+                <div class="coupon-info box-vertical">
+                    <p>{{item.chanelName}}</p>
+                    <p>有效期至{{item.invalidDate.substr(0, 10)}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div ng-if="list.length==0 && finish" class="bg-default full-h">
+            <div class="padding-divider bg-dark"></div>
+            <div class="no-record tc">
+                <img src="images/norecord_icon.png">
+                <h5 class="gray paddingBottom-header">暂无可使用丰彩券</h5>
+            </div>
+        </div>
+    </div>
+
+    <div ui-sref="couponListUsed({})" class="coupon-bottom">
+        查看已使用丰彩券 >>
+    </div>
+
+</div>

@@ -1,0 +1,60 @@
+<!-- 中小奖 绑定顺手付页面，判断是否有手机号-->
+<head-title show-backbtn="true" go-back="goBack()" app-title="顺丰彩兑奖专区"></head-title>
+
+<div class="prize-box">
+    <img class="prize-bg" src="images/result-bg.png">
+
+    <div class="prize-img">
+        <div class="prize-img1">
+            <img class="full-w" src="images/res-wallet_1.png"/>
+            <div>
+                <p class="prize-title emphasis">恭喜您中奖</p>
+                <p class="prize-quota"><span ng-bind="amount | AvaBalance | number : 0"></span><span style="font-size: 1.4rem;">元</span></p>
+                <p style="color: #0488e5;font-size: 1.3rem;">绑定顺手付账号，领奖金</p>
+            </div>
+        </div>
+
+        <img class="prize-mid-img" src="images/res-wallet_2.png"/>
+
+        <div class="prize-img2">
+            <!--有手机号 不用手动输入-->
+            <div ng-if="!obj.inputPhone" class="tc padding-10">
+                <p style="color: #f9ee00;">奖金将入账到顺手付账号：</p>
+                <p style="color: #f9ee00;font-size: 1.8rem;" ng-bind="obj.phoneNumber | subStrForStar_phone"></p>
+                <p class="prize-edit-phone" ng-click="edit()">修改账号</p>
+                <div class="gap tc" style="padding-top: 20px;">
+                    <button class="btn btn-sub" ng-click="next1()">
+                        下一步
+                    </button>
+                </div>
+            </div>
+            <form ng-if="obj.inputPhone" id="form" name="form" class="form" novalidate>
+                <!--没有手机号-->
+                <input class="lang-input border-radius5" style="margin-bottom: 10px;font-size: 1.7rem;" type="tel" ng-model="obj.phoneNumber"
+                       placeholder="输入手机号，未注册自动创建" minlength="11" maxlength="11" oninput="checkTextLength(this,11)"
+                       required/>
+
+                <div class="rel">
+                    <input class="lang-input border-radius5" style="margin-top: 10px;font-size: 1.7rem;" type="tel"
+                           ng-model="obj.smsCode" placeholder="请输入短信验证码"
+                           minlength="4" maxlength="6" required/>
+                    <count-down times="60" on-send="send()" if-send="obj.autoSend" phoneNumber=""
+                                text="发送短信"></count-down>
+                </div>
+                <div class="gap tc">
+                    <button class="btn btn-sub" ng-click="next2()" ng-disabled="form.$invalid">
+                        下一步
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <picc></picc>
+</div>
+
+
+
+
+
+
+

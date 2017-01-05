@@ -1,0 +1,131 @@
+<!-- 顺丰彩专区 -->
+<head-title ng-hide="hidePage" show-backbtn="true" go-back="goBack()" app-title="丰彩专区"></head-title>
+<div class="full-h bg-dark oa" ng-hide="hidePage">
+    <div class="home-top-tips">目前仅深圳福田区、龙华区支持丰彩业务。</div>
+    <div class="padding-divider"></div>
+    <!--非速运App和非速运微信公众号-->
+    <div ng-hide="isSFExp || isWeChat" class="tc bg-default paddingTop-30">
+        <p class="tot-red">累计中奖(元)</p>
+        <div class="tot-n" ng-bind="totalAmt | AvaBalance | number : 2"></div>
+        <div class="box tot-info">
+            <div class="half-w emphasis">
+                <h4 ng-bind="winCnt"></h4>
+                <p>中奖次数</p>
+            </div>
+            <div class="half-w emphasis tot-border-left">
+                <h4 ng-bind="maxAmt | AvaBalance | number : 2"></h4>
+                <p>最高金额(元)</p>
+            </div>
+        </div>
+    </div>
+    <!--速运App和速运微信公众号-->
+    <div ng-if="isSFExp || isWeChat" class="tc home-big-red-bg1 paddingTop-30 home-white-txt">
+        <p>账户余额(元)</p>
+        <div class="tot-n1" ng-click="goWallet()" ng-bind="balance | AvaBalance | number : 2"></div>
+        <div class="box tot-info" style="background-color: #FA5669;">
+            <div class="half-w">
+                <h4 ng-bind="winCnt"></h4>
+                <p>中奖次数</p>
+            </div>
+            <div class="half-w tot-border-left-red">
+                <h4 ng-bind="totalAmt | AvaBalance | number : 2"></h4>
+                <p>累计中奖(元)</p>
+            </div>
+        </div>
+    </div>
+    <div class="padding-divider" ng-hide="isSFExp"></div>
+    <div ng-switch on="sourceType">
+        <div class="bg-default" ng-switch-default>
+            <a class="entry" ng-click="goWallet()">
+                <span class="fl">账户余额</span>
+                <span class="fr home-red-txt" ng-if="balance>0">{{balance | AvaBalance | number : 2}}元</span>
+            </a>
+            <a class="entry" ui-sref="couponListValid({})">
+                <span class="fl">我的丰彩券</span>
+                <span class="fr home-red-txt">{{voucherCnt}}张可用&nbsp;</span>
+            </a>
+            <a class="entry" ui-sref="exchangeDetail({})">
+                <span>兑奖明细</span>
+            </a>
+            <a class="entry bn" ng-click="goShop()">
+                <span>我要购彩</span>
+            </a>
+        </div>
+        <!--丰巢公众号-->
+        <div class="bg-default" ng-switch-when="HIVEBOX">
+            <a class="entry" ui-sref="couponListValid({})">
+                <span class="fl">我的丰彩券</span>
+                <span class="fr home-red-txt">{{voucherCnt}}张可用&nbsp;</span>
+            </a>
+            <a class="entry" ui-sref="exchangeDetail({})">
+                <span>兑奖明细</span>
+            </a>
+        </div>
+        <!--顺手付App-->
+        <div class="bg-default" ng-switch-when="APP-SYPAY">
+            <a class="entry" ui-sref="couponListValid({})">
+                <span class="fl">我的丰彩券</span>
+                <span class="fr home-red-txt">{{voucherCnt}}张可用&nbsp;</span>
+            </a>
+            <a class="entry" ui-sref="exchangeDetail({})">
+                <span>兑奖明细</span>
+            </a>
+            <a class="entry bn" ng-click="goShop()">
+                <span>我要购彩</span>
+            </a>
+        </div>
+        <!--速运App-->
+        <div class="bg-default" ng-switch-when="APP-SFEXP">
+            <a class="entry" ui-sref="couponListValid({})">
+                <span class="fl">我的丰彩券</span>
+                <span class="fr home-red-txt1">{{voucherCnt}}张可用&nbsp;</span>
+            </a>
+            <a class="entry" ui-sref="exchangeDetail({})">
+                <span>兑奖明细</span>
+            </a>
+            <a class="entry bn" ng-click="goShop()">
+                <span>我要购彩</span>
+            </a>
+        </div>
+        <!--速运微信公众号-->
+        <div class="bg-default" ng-switch-when="WECHAT">
+            <a class="entry" ui-sref="couponListValid({})">
+                <span class="fl">我的丰彩券</span>
+                <span class="fr home-red-txt1">{{voucherCnt}}张可用&nbsp;</span>
+            </a>
+            <a class="entry" ui-sref="exchangeDetail({})">
+                <span>兑奖明细</span>
+            </a>
+            <a class="entry bn" ng-click="goShop()">
+                <span>我要购彩</span>
+            </a>
+        </div>
+        <!--速运微信H5-->
+        <div class="bg-default" ng-switch-when="H5-SFEXP">
+            <a class="entry" ui-sref="couponListValid({})">
+                <span class="fl">我的丰彩券</span>
+                <span class="fr home-red-txt1">{{voucherCnt}}张可用&nbsp;</span>
+            </a>
+            <a class="entry" ui-sref="exchangeDetail({})">
+                <span>兑奖明细</span>
+            </a>
+            <a class="entry bn" ng-click="goShop()">
+                <span>我要购彩</span>
+            </a>
+        </div>
+    </div>
+
+    <div ng-if="isSFExp || isWeChat" class="gap tc">
+        <button class="btn btn-sub-red1" ng-click="goExchange()">
+            我要兑奖
+        </button>
+    </div>
+    <!--顺手付-->
+    <div ng-hide="isSFExp || isWeChat" class="gap tc">
+        <button class="btn btn-sub-red" ng-click="goExchange()">
+            我要兑奖
+        </button>
+    </div>
+
+</div>
+

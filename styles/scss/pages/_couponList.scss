@@ -1,0 +1,126 @@
+/**
+ * Author:AndyZhou
+ *   Date:9/14/16 
+ *  Email:zhoulujun@qq.cn
+ */
+.success-face{
+  padding: 40/750*100% 5% 30/750*100%;
+  background: $bgDefault;
+  h5{font-size: 1.4rem;}
+  h2{font-size: 1.6rem; color: $contentRed;padding-top:14px; }
+
+}
+.coupon-item{
+  margin: 15px 5%;
+  @extend .rel;
+  padding: 6px 0;
+  background: $bgDefault;
+  display: -webkit-box;
+  color: #999;
+  border-radius:0 0 5px 5px;
+
+  h3{font-size: 1.8rem;color: $emphasis;margin: 5px 0 5px 0 ;}
+  &.coupon-item-3{
+    h3{
+      color: #a9a9a9;
+    }
+  }
+  &:before{
+    position: absolute;
+    left:0;
+    width:100%;height:4px;
+    content: '';
+    display: block;
+    top: -3px;
+
+    background: $bgDark;
+    background-image: -webkit-gradient(linear, 50% 0, 0 100%, from(transparent), color-stop(.5, transparent), color-stop(.5, $bgDefault), to($bgDefault)),
+    -webkit-gradient(linear, 50% 0, 100% 100%, from(transparent), color-stop(.5, transparent), color-stop(.5, $bgDefault), to($bgDefault));
+    background-size: 10px 4px;
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+  }
+
+}
+
+$couponColor:(#1fa3ef #be58fd #01c84c #a9a9a9);
+@for $i from 0 to length($couponColor){
+  .coupon-item-#{$i}{
+    border-bottom: 4px solid nth($couponColor,$i+1);
+    .coupon-discount{
+      color: nth($couponColor,$i+1);
+    }
+  }
+
+}
+.coupon-discount{
+  //padding: 8px 15px ;
+  border-right: 1px dashed #e8e7e7;
+  text-align: center;
+  margin-right: 15px;
+  h4{font-size: 1.8rem;line-height: 1;vertical-align: bottom;}
+  @at-root .discount{font-size: 5rem;}
+  width: 35%;
+}
+.discount + span {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 25px;
+  @media screen and (max-width:330px){
+    height: 20px;
+  }
+}
+.coupon-tabs{
+  position: absolute;bottom: 6px;right: 16px;
+  transform: rotate3d(0,0,1,-15deg);
+  transform-origin: 0 100%;
+  display: inline-block;
+  padding:  4px 8px;
+  border: 1px solid #ff5647;
+
+  color: #ff5647;
+}
+
+//底部的文本
+.coupon-bottom {
+  position: absolute;
+  bottom: 0;
+  padding:20px;
+  text-align: center;
+  width: 100%;
+  color: #0d86ff;
+  background-color: $bgDark;
+  font-size: 1.5rem;
+}
+.coupon-info{
+  p{
+    width: 200px;
+  }
+  //屏幕宽度大于319
+  @media screen and (min-width: 319px){
+    p{
+      width: 160px;
+    }
+  }
+  //屏幕宽度大于374
+  @media screen and (min-width: 374px){
+    p{
+      width: 200px;
+    }
+  }
+  //屏幕宽度大于413
+  @media screen and (min-width: 413px){
+    p{
+      width: 220px;
+    }
+  }
+
+}
+
+//券列表信息展示样式
+.box-vertical {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}

@@ -1,0 +1,75 @@
+<div class="bg-dark emphasis" style="padding: 6px 0 6px 20px;">奖金如何查看？</div>
+<div style="padding:15px 20px 0 20px;" class="emphasis">
+    <!--顺手付兑奖成功-->
+    <div ng-if="sourceType == 'APP-SYPAY'">
+        <div class="got-prize-bottom-title">顺手付APP查看</div>
+        <img src="images/view-banlance-sfpay.png" class="full-w"/>
+        <div class="got-prize-bottom">
+            <span>点开顺手付APP</span>
+            <span>点击“我的”</span>
+            <span>查看余额</span>
+        </div>
+    </div>
+    <!--速运APP兑奖成功-->
+    <div ng-if="sourceType == 'APP-SFEXP'">
+        <div class="got-prize-border-bottom">
+            <div class="got-prize-bottom-title">方法一：速运APP查看</div>
+            <img src="images/view-banlance-express.png" class="full-w"/>
+            <div class="got-prize-bottom got-prize-bottom-border">
+                <span>点开速运APP</span>
+                <span>点击“我的”</span>
+                <span>进入丰彩专区</span>
+            </div>
+
+            <div class="got-prize-bottom-title" style="margin-top: 15px;">方法二：顺手付APP查看</div>
+            <img src="images/view-banlance-sfpay.png" class="full-w"/>
+            <div class="got-prize-bottom">
+                <span>点开顺手付APP</span>
+                <span>点击“我的”</span>
+                <span>查看余额</span>
+            </div>
+        </div>
+        <div class="tc" style="margin-bottom: 20px;">
+            <div class="padding-5 content-red1">若是没有安装顺手付，请先下载顺手付</div>
+            <button class="btn btn-sub-red full-w" ui-sref="download">
+                立即下载
+            </button>
+        </div>
+    </div>
+    <!--速运微信公众号-->
+    <div ng-if="sourceType == 'H5-SFEXP' || sourceType == 'WECHAT'">
+        <div class="got-prize-border-bottom">
+            <div class="got-prize-bottom-title">方法一：顺手付APP查看</div>
+            <img src="images/view-banlance-sfpay.png" class="full-w"/>
+            <div class="got-prize-bottom-border">
+                <div class="got-prize-bottom">
+                    <span>点开顺手付APP</span>
+                    <span>点击“我的”</span>
+                    <span>查看余额</span>
+                </div>
+                <div class="tc" style="margin-bottom: 20px;">
+                    <div class="padding-5 content-red1">若是没有安装顺手付，请先下载顺手付</div>
+                    <button class="btn btn-sub-red full-w" ui-sref="download">
+                        立即下载
+                    </button>
+                </div>
+            </div>
+
+            <div style="margin-top: 15px;">方法二：关注顺丰速运公众号查看</div>
+            <div class="emphasis QRCode">
+                <img src="images/sf_express_wechat_public_accounts.png"/>
+                <h3>长按二维码，点击关注</h3>
+            </div>
+            <img src="images/view-banlance-express.png" class="full-w"/>
+            <div class="got-prize-bottom">
+                <span>点开速运公众号</span>
+                <span>点击“我的”</span>
+                <span>进入丰彩专区</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="picc bg-dark exchange-detail-color" ng-style="{position:(sourceType == 'APP-SYPAY')?'':'static'}">
+    PICC人保财险承保，为您的每一分钱保价护航<br/>顺丰金融 版权所有
+</div>
+

@@ -1,0 +1,22 @@
+<!-- 兑奖明细 -->
+<head-title show-backbtn="true" go-back="goBack()" app-title="兑奖明细"></head-title>
+<div class="padding-divider bg-dark"></div>
+<div ng-class="list.length>0 ? 'full-h' : ''" class="item showList bg-dark oa exchange-detail-color" >
+    <div ng-repeat="item in list" class="detail-list">
+        <div class="ov list-left">
+            <span class="fl">彩票编码</span>
+            <span class="fr">{{item.exchangeTime.substr(0,10)}}</span>
+        </div>
+        <div class="font-normal ov list-left">
+            <span class="fl emphasis">{{item.lotterySn | lotteryNoSplit}}</span>
+            <span ng-class="{'fr content-red': item.status=='PAID', 'fr':item.status=='PAY_FAIL'||item.status=='PAYING'}"  >{{item.amount=='null'?0:(item.amount | AvaBalance | number : 2)}}元</span>
+        </div>
+        <div ng-if="item.status == 'PAY_FAIL'" class="content-red font-small list-left">此笔奖金代付失败，请联系顺丰彩客服9533889处理。</div>
+        <div ng-if="item.status == 'PAYING'" class="content-red font-small list-left">此笔奖金代付超时，请联系顺丰彩客服9533889处理。</div>
+    </div>
+</div>
+
+<div ng-if="list.length==0 && finish" class="no-record tc bg-default">
+    <img src="images/norecord_icon.png">
+    <h5>无记录</h5>
+</div>

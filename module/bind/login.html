@@ -1,0 +1,48 @@
+<!-- 顺丰彩兑奖页面 -->
+<head-title show-backbtn="true" go-back="goBack()" app-title="登录顺手付"></head-title>
+<div ng-if="ifWifi" class="home-top-tips"><img src="images/icon-mark.png" style="width:30px;padding: 5px;" />检测到您当前连接的是WIFI环境，为了您的资金安全，请切换到2G/3G/4G环境后操作。</div>
+<div class="exchange-input-bg-color">
+    <div class="exchange-tips" style="padding-top: 20%;">
+        <img class="lottery-log" src="images/icon-lottery-log.png" />
+        <p>丰彩专区服务由顺手付提供，请登录顺手付账号</p>
+        <p>登录成功将绑定<span ng-if="isWeChat">微信</span><span ng-if="isSFExp">顺丰会员</span>，下次访问无需登录</p>
+    </div>
+
+    <form id="form" name="form" class="form oa" novalidate >
+        <img class="exchange-bg-img" src="images/exchange-input-bg.png" />
+        <div class="exchange-content">
+            <!-- 修改手机号-->
+            <div ng-if="obj.inputPhone" style="margin: 0 auto;">
+                <input class="lang-input topLeftRight height100" type="tel"
+                       ng-model="obj.phoneNumber"
+                       placeholder="输入手机号，未注册自动创建" minlength="11" maxlength="11" oninput="checkTextLength(this,11)"
+                       required ng-focus="inputFocus()" ng-blur="inputBlur()" style="margin: 0 auto;" />
+
+                <div class="rel">
+                    <input class="lang-input bottomLeftRight height100" type="tel"
+                           ng-model="obj.smsCode" placeholder="输入短信验证码"
+                           minlength="4" maxlength="6" required style="margin: 0 auto;"/>
+                    <count-down times="60" on-send="send()" if-send="obj.autoSend" phoneNumber=""
+                                text="发送短信"></count-down>
+                </div>
+            </div>
+            <!--有手机号 不用手动输入-->
+            <div ng-if="!obj.inputPhone" class="full-w emphasis">
+                <div class="has-phone">
+                    <span>是否使用手机号</span><span ng-bind="obj.phoneNumber | subStrForStar_phone"></span>登录？
+                </div>
+                <p class="edit-phone" ng-click="edit()">修改手机号</p>
+            </div>
+            <p class="space-little"></p>
+            <div class="gap tc space-big">
+                <button id="exchange-btn" class="btn btn-sub-red" ng-click="next()" ng-disabled="form.$invalid">
+                    下一步
+                </button>
+            </div>
+            <div ng-if="obj.showScanCode" ng-click="scan()" class="tc padding" style="color: #027ebd;">切换成扫码兑奖</div>
+        </div>
+    </form>
+
+    <!--页脚-->
+    <picc></picc>
+</div>

@@ -1,0 +1,31 @@
+<!-- 例如：已经查询到中奖，但代扣失败 -->
+<!--中奖且奖金小于1万-响应超时-->
+<!--中奖且奖金小于1万-代付失败-->
+<head-title show-backbtn="true" go-back="goBack()" app-title="中奖未领取"></head-title>
+<div class="full-w full-h rel tc" style="background-color: #f2f3f6;">
+    <!--超时-->
+    <div ng-if="obj.isNetTimeout" class="no-record full-w">
+        <img src="images/icon-paopao.png" style="width: 27%;" />
+        <h5 class="emphasis font-small">奖金发放超时，稍后会有短信通知结果，<br/>请注意查收</h5>
+        <div class="gap tc">
+            <button class="btn iknow-w" ng-click="reView()">
+                继续查询
+            </button>
+        </div>
+    </div>
+    <!--失败-->
+    <div ng-if="obj.isNetFail" class="no-record full-w" style="top:46%;">
+        <img src="images/icon-man.png" style="width: 28%;"/>
+        <h5 class="emphasis font-small">奖金发放失败，客服正在人工处理，<br />请耐心等待</h5>
+        <div class="gap tc">
+            <button class="btn iknow-w" ng-click="goBack()">
+                关闭
+            </button>
+        </div>
+    </div>
+
+    <div class="picc">
+        <p class="emphasis font-little padding-5">客服电话：9533889</p>
+        <p class="font-small" style="color: #999999;">PICC人保财险承保，为您的每一分钱保价护航<br/>顺丰金融 版权所有</p>
+    </div>
+</div>

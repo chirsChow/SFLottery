@@ -1,0 +1,35 @@
+<!-- 体彩中心地址 -->
+<head-title show-backbtn="true" go-back="goBack()" app-title="体彩中心地址" theme="address-header"></head-title>
+<div class="padding-divider bg-dark"></div>
+<div class="province-container">
+    <div ng-click="getList('广东省')">
+        <input type="radio" id="radio1" name="province" checked="checked"/>
+        <label for="radio1" class="province-label">广东</label>
+    </div>
+    <div ng-click="getList('湖南省')">
+        <input type="radio" id="radio2" name="province"/>
+        <label for="radio2" class="province-label">湖南</label>
+    </div>
+    <div ng-click="getList('江苏省')">
+        <input type="radio" id="radio3" name="province"/>
+        <label for="radio3" class="province-label">江苏</label>
+    </div>
+    <div ng-click="getList('江西省')">
+        <input type="radio" id="radio4" name="province"/>
+        <label for="radio4" class="province-label">江西</label>
+    </div>
+</div>
+<div ng-class="list.length>0 ? 'oa' : ''" class="item bg-dark re-dark">
+    <div ng-repeat="item in list" class="detail-list">
+        <div class="list-left emphasis ov">
+            <span ng-bind="item.cityName"></span>&nbsp;&nbsp;
+            <span ng-bind="item.telphone"></span>
+        </div>
+        <div class="list-left gray-color" ng-bind="item.detailAdress"></div>
+    </div>
+</div>
+
+<div ng-if="list.length==0 && finish" class="no-record tc bg-default">
+    <img src="images/norecord_icon.png">
+    <h5>无记录</h5>
+</div>

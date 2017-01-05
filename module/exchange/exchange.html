@@ -1,0 +1,102 @@
+<!-- 顺丰彩兑奖页面 -->
+<head-title show-backbtn="true" go-back="goBack()" app-title="顺丰彩兑奖专区"></head-title>
+<div ng-hide="hasDM" class="full-h">
+<div ng-if="ifWifi" class="home-top-tips"><img src="images/icon-mark.png" style="width:30px;padding: 5px;" />检测到您当前连接的是WIFI环境，为了您的资金安全，请切换到2G/3G/4G环境后操作。</div>
+<div class="exchange-input-bg-color">
+    <img class="exchange-log-img" src="images/lottery-log.png" />
+    <div class="exchange-guide" ng-click="showMaskLayer()">
+        <span>兑奖指引</span>
+        <img src="images/icon-double-arrow.png" />
+    </div>
+    <div class="exchange-tips">
+        <div class="bold">温馨提示</div>
+        <div>请确认您已刮开保安区涂层覆盖膜</div>
+    </div>
+    <!-- 手动输入-->
+    <form ng-if="obj.manualInput" id="form" name="form" class="form oa" novalidate >
+        <img class="exchange-bg-img" src="images/exchange-input-bg.png" />
+        <div class="exchange-content">
+            <div class="space-large">
+                <input class="lang-input topLeftRight height100" type="tel"
+                       ng-model="obj.security"
+                       placeholder="请输入保安区的兑奖码" minlength="11" maxlength="11" oninput="checkTextLength(this,11)"
+                       required ng-focus="inputFocus()" ng-blur="inputBlur()" style="margin: 0 auto;" />
+                <input class="lang-input bottomLeftRight height100" type="tel" ng-model="obj.ticketNo" placeholder="请输入保安区右侧的票码"
+                       minlength="19" maxlength="21" oninput="split(this)" required ng-focus="inputFocus()" ng-blur="inputBlur()" style="margin: 0px auto;" />
+            </div>
+            <p class="space-small"></p>
+            <label class="checkbox">
+                <input type="checkbox" ng-model="obj.accept" required/>
+                <i>我已同意</i><a ui-sref="protocal">《兑奖须知》</a>
+            </label>
+            <div class="tc paddingTop-30">
+                <button id="exchange-btn" class="btn btn-sub-red" ng-click="exchange()" ng-disabled="form.$invalid">
+                    我要兑奖
+                </button>
+            </div>
+            <div ng-if="obj.showScanCode" ng-click="scan()" class="tc padding-10 exchange-change">
+                <img src="images/icon-shaoyishao.png"/>
+                <span>切换成扫码兑奖</span>
+            </div>
+        </div>
+        <!--指引层-->
+        <div ng-if="ifMaskLayerInput" class="mask-layer oa" ng-style="maskTop">
+            <img ng-click="closeMaskLayer()" src="images/exc_tip_input_bg.png"/>
+        </div>
+    </form>
+
+    <!--可以用扫一扫功能-->
+    <div ng-hide="obj.manualInput" class="tc">
+        <picture>
+            <source srcset="images/exchange-scan-bg2.png" media="(max-height:540px)">
+            <source srcset="images/exchange-scan-bg.png" media="(max-height:736px)">
+            <img class="exchange-bg-img" src="images/exchange-scan-bg.png" />
+        </picture>
+
+        <div class="exchange-scan-btn">
+            <button class="btn btn-sub bold" style="width: 74%;" ng-click="scan()">
+                点击开始扫描
+            </button>
+
+            <div class="tc padding emphasis" ng-click="input()">
+                <span>扫描不出来？</span><span class="exchange-change-digest">切换数字兑奖</span>
+            </div>
+        </div>
+
+        <!--指引层-->
+        <div ng-if="ifMaskLayerScan" class="mask-layer">
+            <img ng-click="closeMaskLayer()" src="images/exc_tip_scan_bg.png"/>
+        </div>
+    </div>
+    <!--页脚-->
+    <picc ng-if="showPicc"></picc>
+</div>
+<div ng-if="showDialogWarn">
+    <div class="bb_mask"></div>
+    <div class="bb_body-5 tc">
+        <img style="width: 20%;margin-top: 10px;" src="images/warning.png"/>
+        <div class="emphasis padding">
+            <h3 ng-bind="tipTitle"></h3>
+            <p class="space-little" ng-bind="tipContent"></p>
+            <button class="btn iknow" ng-click="closeIknow()">我知道了</button>
+        </div>
+    </div>
+</div>
+<div ng-if="showDialogTips">
+    <div class="bb_mask"></div>
+    <div class="bb_body-5">
+        <img class="full-w exchange-tips-img" src="images/exchange-tip-title.png"/>
+
+        <div class="exchange_tips" style="margin-top:0;">
+            <p>1、<span class="content-red">在线兑奖</span>只支持1万元及以下客户兑奖</p>
+
+            <p>2、<span class="content-red">1万元以上</span>请自行前往彩票店兑奖</p>
+
+            <p>3、<span class="content-red">未成年人</span>不允许兑奖</p>
+        </div>
+        <div class="tc" style="padding:0 4% 8% 4%;">
+            <button class="btn btn-sub-red home-big-red-bg" ng-click="closeTips()">下一步</button>
+        </div>
+    </div>
+</div>
+</div>

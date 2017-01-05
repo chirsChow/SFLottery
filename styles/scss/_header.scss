@@ -1,0 +1,15 @@
+
+.header{
+  @extend .box;
+  position: fixed;z-index: 900;top:0;left:0;width: 100%;line-height: $headerHeight;
+  -webkit-box-pack: justify;
+  background:#fff;
+  //border: $headerBottomBorder solid #e4e4e4;
+  >span{display: block;padding: 0 $leftSpace;min-width: 56px;}
+  h1{font-size: 1.7rem;color:$emphasis;font-weight: 500; }
+  @at-root .btn-prev{font-size: 2.8rem;}
+  @at-root .btn-next{font-size: 1.5rem;font-weight: 500;}
+  @at-root .hide-header{margin-top: -$headerHeight!important;}
+  @at-root .has-header{padding-top: $headerHeight;}
+}
+

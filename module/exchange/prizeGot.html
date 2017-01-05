@@ -1,0 +1,30 @@
+<!-- 已兑奖 -->
+<head-title show-backbtn="true" go-back="goBack()" app-title="中奖结果"></head-title>
+<div class="prize-box">
+    <img class="prize-bg" src="images/result-bg.png">
+
+    <div class="prize-img">
+        <div class="prize-img1">
+            <img class="full-w" src="images/res-wallet_1.png"/>
+            <div>
+                <p class="prize-box-tips">奖金已领取，不要太贪心哦</p>
+                <img class="prize-result-img-big" src="images/result-had-got.png"/>
+            </div>
+        </div>
+        <img class="prize-mid-img" src="images/res-wallet_2.png"/>
+        <div class="prize-img2">
+            <div class="padding">
+            <p>温馨提示：</p>
+            <p>你的彩票<span style="color: #ffd842;">已兑换过<span ng-bind="amount | AvaBalance | number : 2"></span>元</span>，请去你的</p>
+            <p>顺手付－余额中查看吧</p>
+            <p>万元大奖等着你，再来一张吧</p>
+            </div>
+            <div class="gap tc hidden">
+                <button ng-click="goShop()" class="btn btn-sub">
+                    立即购彩
+                </button>
+            </div>
+        </div>
+    </div>
+    <picc></picc>
+</div>
