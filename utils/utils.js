@@ -120,6 +120,10 @@ define(['require', 'app'], function (require, app) {
                             alert("获取地址失败");
                         }
                     });
+                },
+                getRandomFromArray:function(arr){
+                    if(!arr) return;
+                    return arr[parseInt(Math.random()*arr.length)];
                 }
             };
         }]);
